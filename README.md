@@ -1,2 +1,5 @@
 # CyberSecurity2024_IV
-For Classroom
+
+## Lecture
+
+- [1203_01](note/1st_1203.md)
