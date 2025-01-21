@@ -1,19 +1,20 @@
 # CyberSecurity2024_IV
 
-## Lecture
+## Command
 
-- [1203_01](note/1st_1203.md)
-
+- [netcat](.docs/netcat.md)
+- [curl](./docs/curl.md)
+- [command](./docs/commands.md)
 
 ## Chapter 1
 
 ### 1-1 ハッキングラボとは
 
-ハッキングラボの形態，ケース2を使う
+ハッキングラボの形態，ケース 2 を使う
 
 ### 1-2 本書を読むにあたって
 
-前提知識にLinuxの基本的なコマンドが操作できることを確認
+前提知識に Linux の基本的なコマンドが操作できることを確認
 
 ### 1-3 前作との違い
 
@@ -32,7 +33,7 @@
 仮想マシンを活用せよ，仮想マシンなら新規削除がかんたんに出来
 外部に影響を与える影響を与えるリスクを避けられる
 
-仮想2台を用いるのでメモリはある程度(8G)以上ほしい
+仮想 2 台を用いるのでメモリはある程度(8G)以上ほしい
 
 ## Chapter2 仮想環境によるハッキングラボの構築
 
@@ -40,87 +41,74 @@
 
 - 本(日本語の書籍は少ない)
 - 動画コンテンツ
-- Webページ
+- Web ページ
 - 勉強会(沖縄にもいくつかのグループがある)
 - CTF(重要)
 
-VulnHubおよびMetaspoittable
+VulnHub および Metaspoittable
 
 ### 2-2 仮想化とは
 
 #### 仮想化ソフト分類
 
-- ホストOS型(VirtualBoxなど，個人で使う)
-- コンテナ型(Dockerなど，個人で使う)
+- ホスト OS 型(VirtualBox など，個人で使う)
+- コンテナ型(Docker など，個人で使う)
 - ハイパーバイザ型(ネットワークのお仕事はこれを使う)
 
-### 2-3 ハッキングラボでVirtualBoxを採用する理由
+### 2-3 ハッキングラボで VirtualBox を採用する理由
 
-HostとGuestの関係を知り，IPアドレスを抑える
+Host と Guest の関係を知り，IP アドレスを抑える
 
-### 2-4 VirtualBoxのインストール
+### 2-4 VirtualBox のインストール
 
-LinuxではAPTでインストールできる，もちろん公式のインストーラからでも可
+Linux では APT でインストールできる，もちろん公式のインストーラからでも可
 
-### 2-5 VirtualBoxの基本設定
+### 2-5 VirtualBox の基本設定
 
-- Extension Packのインストール
+- Extension Pack のインストール
 
-### 2-6 攻撃用OSとしてのKaliLinuxとParrotOS
+### 2-6 攻撃用 OS としての KaliLinux と ParrotOS
 
-Linuxディストリビューションとは何かを知り，攻撃用端末向けのLinuxを知る
+Linux ディストリビューションとは何かを知り，攻撃用端末向けの Linux を知る
 
-### 2-7 VirtualBoxにParrotOSをインストールする
+### 2-7 VirtualBox に ParrotOS をインストールする
 
 エキスパートモードを使用して設定するべきところを理解する
 
-- HardDisk容量
+- HardDisk 容量
 - メモリ& CPU&ヴィデオメモリの設定
 
-### 2-8 初めてのParrotOS
+### 2-8 初めての ParrotOS
 
-まずはVirtualBoxのHostキー理解とパッケージをAPTでアップグレードできればよい
+まずは VirtualBox の Host キー理解とパッケージを APT でアップグレードできればよい
 
-#### OSのセキュリティ機構
+#### OS のセキュリティ機構
 
 - SELinux(disable)
 - AppArmer(実験のみ)
 - iptable & ufw(disable)
 
-### 2-9 ParrotOSのネットワーク設定
+### 2-9 ParrotOS のネットワーク設定
 
-#### VirtualBoxにおけるネットワークの種類
+#### VirtualBox におけるネットワークの種類
 
 ##### 重要ポイント
 
-- VirtualBoxでのネットワークのセッティングができるようにする
-- ParrotOSのIPセッティングができるようにする
-
+- VirtualBox でのネットワークのセッティングができるようにする
+- ParrotOS の IP セッティングができるようにする
 
 ##### ネットワーク基礎を速習する(P102)
 
 それぞれ説明できること
 
-##### VirtualBoxにおけるネットワークの種類(P109)
+##### VirtualBox におけるネットワークの種類(P109)
 
-VirtualBoxは様々なネットワークをサポートしているが，NatとHostOnlyをつかう
+VirtualBox は様々なネットワークをサポートしているが，Nat と HostOnly をつかう
 
-##### 本書におけるParrotOSのネットワーク構成(P115)
+##### 本書における ParrotOS のネットワーク構成(P115)
 
-教科書ではNatとHostOnlyを使い分けているが，両方バインドしていてもよい
+教科書では Nat と HostOnly を使い分けているが，両方バインドしていてもよい
 
-##### ParrotOSをHostOnlyNetworkに接続するよう設定する(P117)
+##### ParrotOS を HostOnlyNetwork に接続するよう設定する(P117)
 
-静的アドレスの設定の仕方はいくつかあるが，旧来のやり方とNetworkManager経由のやりかとを理解して設定できるようにする，GUIやTUIは特に覚える必要はない
-
-
-
-
-
-
-
-
-
-
-
-
+静的アドレスの設定の仕方はいくつかあるが，旧来のやり方と NetworkManager 経由のやりかたとを理解して設定できるようにする，GUI は特に覚える必要はない
