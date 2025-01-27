@@ -22,24 +22,24 @@ IT College Okinawa サイバーセキュリティ科は，[時代が求める「
 
 ### 第一部
 
-- [Chapter 1](./docs/chap1.md)
-- [Chapter 2](./docs/chap2.md)
-- [Chapter 3](./docs/chap3.md)
-- [Chapter 4](./docs/chap4.md)
+- [Chapter 1](./note/chap1.md)
+- [Chapter 2](./note/chap2.md)
+- [Chapter 3](./note/chap3.md)
+- [Chapter 4](./note/chap4.md)
 
 ### 第二部
 
 #### EXPERIMENT #01 Potato のハッキング
 
-- [座学編](./docs/experiment01.md)
-- [実習篇](./docs/experiment01_handson.md)
+- [座学編](./note/experiment01.md)
+- [実習篇](./note/experiment01_handson.md) under construction
 
 #### EXPERIMENT #02 DC-1 のハッキング
 
-- [座学編](./docs/experiment02.md)
-- [実習篇](./docs/experiment02_handson.md)
+- [座学編](./note/experiment02.md) under construction
+- [実習篇](./note/experiment02_handson.md) under construction
 
 #### EXPERIMENT #03 DC-2 のハッキング
 
-- [座学編](./docs/experiment03.md)
-- [実習篇](./docs/experiment03_handson.md)
+- [座学編](./note/experiment03.md) under construction
+- [実習篇](./note/experiment03_handson.md)
