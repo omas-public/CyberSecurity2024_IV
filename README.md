@@ -32,7 +32,7 @@ IT College Okinawa サイバーセキュリティ科は，[時代が求める「
 #### EXPERIMENT #01 Potato のハッキング
 
 - [座学編](./note/experiment01.md)
-- [実習篇](./note/experiment01_handson.md) under construction
+- [実習篇](./note/experiment01_handson.md) 
 
 #### EXPERIMENT #02 DC-1 のハッキング
 
