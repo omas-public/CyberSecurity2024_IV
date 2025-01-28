@@ -15,7 +15,7 @@ IT College Okinawa サイバーセキュリティ科は，[時代が求める「
 本講義を学習するにあたって UNIX コマンドは必要不可欠である，基本的なコマンド以外に以下のコマンドサンプルは最低限使えるようにすること。
 
 - [unix command](./docs/commands.md)
-- [netcat](.docs/netcat.md)
+- [netcat](./docs/netcat.md)
 - [curl](./docs/curl.md)
 
 ## ハッキング・ラボの作り方
@@ -32,7 +32,7 @@ IT College Okinawa サイバーセキュリティ科は，[時代が求める「
 #### EXPERIMENT #01 Potato のハッキング
 
 - [座学編](./note/experiment01.md)
-- [実習篇](./note/experiment01_handson.md) 
+- [実習篇](./note/experiment01_handson.md)
 
 #### EXPERIMENT #02 DC-1 のハッキング
 
