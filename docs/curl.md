@@ -22,8 +22,8 @@ $ google-chrome index.html
 ```sh
 $ URI=https://www.nihongo-pro.com/jp/kanji-pal/list/jlpt/N1
 $ curl $URI \
-| grep 'span class = "kanji_clickable"' \
-| sed -e 's/<span [^>]*>\(.*\)<\/span>/\1/g' \
+| grep 'span class="kanji_clickable"' \
+| sed -e 's/<span [^>]*>\(.\)<\/span>/\1/g' \
 | sed -e 's/<[^>]*>//g' \
 | sed -e 's/[x00-x7F]//g' \
 | sed -n '1p' \
@@ -47,7 +47,7 @@ $ curl -I $URI
 download
 ```sh
 $ URI=https://piapro.net/images/ch_img_miku.png
-$ curl -O $URI
+$ curl -O $URI 
 ```
 
 use cookie
@@ -62,7 +62,7 @@ $ curl -b $COOKIE $URI
 
 ## Server
 
-Simple HTTP Server(on NodeJS)
+[Simple HTTP Server(on Python)](../web/getpost.py)
 ```py
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import parse_qs, urlparse
@@ -80,7 +80,7 @@ class CustomHTTPRequestHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-Type', 'text/plain; charset=utf-8')
         self.end_headers()
-        body = f'POST:{self.rfile.read(int(self.headers['content-length'])).decode('utf-8')}'
+        body = f'POST:{self.rfile.read(int(self.headers["content-length"])).decode("utf-8")}'
         self.wfile.write(body.encode())
 
 PORT = 8000
@@ -91,7 +91,7 @@ httpd = HTTPServer(server_address, CustomHTTPRequestHandler)
 httpd.serve_forever()
 ```
 
-Simple HTTP Server(on NodeJS)
+[Simple HTTP Server(on NodeJS)](../web/getpost.js)
 ```js
 const PORT = 8000
 const server = require('http') .createServer((req, res) => {

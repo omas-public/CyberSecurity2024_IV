@@ -78,8 +78,8 @@ $ PORT=8000
 $ SERVER=192.168.56.101
 $ nc $SERVER $PORT
 > GET / HTTP/1.0
-> ENTER
-> ENTER
+> CRLF
+> CRLF
 ```
 
 request-header
@@ -88,9 +88,9 @@ $ nc www.it-college.ac.jp 80
 > GET / HTTP/1.1
 > HOST:www.it-college.ac.jp
 > REFERER:x.com
-> USER-AGENT
-> ENTER
-> ENTER
+> USER-AGENT:hoge
+> CRLF
+> CRLF
 ```
 
 ## Mail
