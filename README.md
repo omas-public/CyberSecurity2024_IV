@@ -37,7 +37,7 @@ IT College Okinawa サイバーセキュリティ科は，[時代が求める「
 #### EXPERIMENT #02 DC-1 のハッキング
 
 - [座学編](./note/experiment02.md) under construction
-- [実習篇](./note/experiment02_handson.md) under construction
+- [実習篇](./note/experiment02_handson.md)
 
 #### EXPERIMENT #03 DC-2 のハッキング
 
