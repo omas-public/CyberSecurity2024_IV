@@ -1,25 +1,23 @@
 # UNIX Commands & vi
 
-
 ## KeyBind
 
-本校では，1年生のはじめにBashのキーバインドは学習しているが，あまり使いこなせていないように見受けられる。
-keybindを使いこなすことで作業時間の短縮になる，覚え方のコツとしては
+本校では，1 年生のはじめに Bash のキーバインドは学習しているが，あまり使いこなせていないように見受けられる。
+keybind を使いこなすことで作業時間の短縮になる，覚え方のコツとしては
 関連するキーバインドをセットで覚えると良い。
 
-またBashは標準では，emacs エディタのkeybindが使われているが 
-`set -o vi` で vi のKeyBindに変更することもできるので ，好みで使い分けると良い。
+また Bash は標準では，emacs エディタの keybind が使われているが
+`set -o vi` で vi の KeyBind に変更することもできるので ，好みで使い分けると良い。
 
-
-- C-b / C-f    (カーソルを一文字 左/右に移動)
-- C-h / C-d   (一文字削除 左/右) 
-- M-b / M-f  (カーソルを一単語 左/右に移動)
-- M-C-] char / C-] char (カーソルより左/右 のcharに移動)
+- C-b / C-f (カーソルを一文字 左/右に移動)
+- C-h / C-d (一文字削除 左/右)
+- M-b / M-f (カーソルを一単語 左/右に移動)
 - C-w / M-d (一単語削除 左/右)
-- C-u / C-k   (カーソルより左/右を削除)
-- C-a / C-e  (カーソルを行頭/行末に移動)
-- C-p / C-n  (Command history を前/後に)
-- C-r / M-p  (履歴から検索)
+- M-C-] char / C-] char (カーソルより左/右 の char に移動)
+- C-u / C-k (カーソルより左/右を削除)
+- C-a / C-e (カーソルを行頭/行末に移動)
+- C-p / C-n (Command history を前/後に)
+- C-r / M-p (履歴から検索)
 - C-t (一文字入れ替え)
 - M-. (直前のコマンドの引数を入力)
 
@@ -153,7 +151,7 @@ output = ping1('localhost')
 print(output)
 
 # loop code
-adresses = [f'192.168.56.{i}' for i in range(1,10)]
-for address in adresses:
+addresses = [f'192.168.56.{i}' for i in range(1,10)]
+for address in addresses:
   stdout(ping1(address))
 ```
