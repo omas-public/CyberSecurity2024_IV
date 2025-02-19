@@ -3,12 +3,14 @@
 ## echo server
 
 server
+
 ```sh
 $ PORT=5555
 $ nc -l -p $PORT
 ```
 
 client
+
 ```sh
 $ PORT=5555
 $ HOSTNAME=192.168.56.101
@@ -18,6 +20,7 @@ $ nc $HOSTNAME $PORT
 ## remote server
 
 server
+
 ```sh
 $ PORT=5555
 $ SHELL=/bin/bash
@@ -25,6 +28,7 @@ $ nc -l -p $PORT -e $SHELL
 ```
 
 client
+
 ```sh
 $ HOSTNAME=192.168.56.101
 $ PORT=5555
@@ -37,6 +41,7 @@ $ nc $HOSTNAME $PORT
 ## port scan
 
 client
+
 ```sh
 $ HOSTNAME=192.168.56.101
 $ PORT=5555
@@ -46,6 +51,7 @@ $ nc -zv $HOSTNAME $PORT
 ## file transfer(redirect)
 
 server
+
 ```sh
 $ PORT=5555
 $ FILE='infile'
@@ -53,6 +59,7 @@ $ nc -l -p $PORT > FILE
 ```
 
 client
+
 ```sh
 $ PORT=5555
 $ HOSTNAME=192.168.56.101
@@ -64,15 +71,18 @@ $ ^C
 ## HTTP
 
 - rfc1945 [HTTP1.0](https://datatracker.ietf.org/doc/html/rfc1945#section-10.8)
-- rfc9110 [HTTP/1.1およびHTTP/2](https://tex2e.github.io/rfc-translater/html/rfc9110.html)
+- rfc9110 [HTTP/1.1 および HTTP/2](https://tex2e.github.io/rfc-translater/html/rfc9110.html)
 
 http server
+
 ```sh
 $ PORT=8000
 $ python3 -m http.server $PORT
 >
 ```
+
 client
+
 ```sh
 $ PORT=8000
 $ SERVER=192.168.56.101
@@ -83,6 +93,7 @@ $ nc $SERVER $PORT
 ```
 
 request-header
+
 ```sh
 $ nc www.it-college.ac.jp 80
 > GET / HTTP/1.1
@@ -99,6 +110,7 @@ $ nc www.it-college.ac.jp 80
 - rfc1939 [pop3](http://srgia.com/docs/rfc1939j.html)
 
 メイル送信
+
 ```sh
 $ MAIL_SERVER=192.168.56.101
 $ PORT=25
@@ -113,6 +125,7 @@ $ nc $MAIL_SERVER $PORT
 ```
 
 メイルを読む
+
 ```sh
 $ MAIL_SERVER=192.168.56.101
 $ PORT=110
